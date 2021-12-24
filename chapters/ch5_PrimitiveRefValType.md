@@ -367,10 +367,10 @@ using System.Runtime.InteropServices;
 // 开发人员显式排列这个值类型的字段
 [StructLayout(LayoutKind.Explicit)]
 internal struct SomeValType {
-  [FiledOffset(0)]
+  [FieldOffset(0)]
   private readonly Byte m_b;     // m_b 和 m_x 字段在该类型的实例中相互重叠
 
-  [FiledOffset(0)]
+  [FieldOffset(0)]
   private readonly Int16 m_x;    // m_b 和 m_x 字段在该类型的实例中相互重叠
   ...
 }
