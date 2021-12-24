@@ -759,7 +759,7 @@ public static class Program
 {
     public static void Main()
     {
-        // 在栈上闯将两个 Point 实例
+        // 在栈上创建两个 Point 实例
         Point p1 = new Point(10, 10);
         Point p2 = new Point(20, 20);
 
