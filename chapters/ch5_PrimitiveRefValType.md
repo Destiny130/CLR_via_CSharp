@@ -630,7 +630,7 @@ Console.WriteLine(v + "," + o);     // 显示 "123,5"
 甚至可以这样调用 `WriteLine` ，进一步提升上述代码的性能：
 
 ```C#
- Console.WriteLine(v.ToString() + "," + (Int32)o);     // 显示 "123,5"
+ Console.WriteLine(v.ToString() + "," + o);     // 显示 "123,5"
 ```
 
 这会为未装箱的值类型实例 `v` 调用 `ToString` 方法，它返回一个 `String` 。 `String` 对象已经是引用类型，所以能直接传给 `Concat` 方法，不需要任何装箱操作。
