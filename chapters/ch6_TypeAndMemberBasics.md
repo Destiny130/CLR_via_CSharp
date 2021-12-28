@@ -101,7 +101,7 @@ using System;
 public class ThisIsAPublicType { ... }
 
 // 以下类型的可见性为 internal，只可由本程序集中的代码访问
-public class ThisIsAnInternalType { ... }
+internal class ThisIsAnInternalType { ... }
 
 // 由于没有显式声明类型的可见性，所以以下类型的可见性为 internal
 class ThisIsAlsoAnInternalType { ... }
